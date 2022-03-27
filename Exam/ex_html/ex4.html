@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+
+    <!--<link href="style.css" rel="stylesheet" />-->
+    <!--link 태그를 이용해서 style.css 파일을 불러옴-->
+    <!--css파일이 다른 폴더에 있을때 link를 사용해서 불러오면 편함-->
+
+    <!--style 태그는 html과 css 파일이 같은 폴더에 있을 때 css코드를 넣는 곳임-->
+    <!--style 태그는 반드시 <head> 태그 안에 있어야 함-->
+    <style>
+      /*css코드는 html 태그를 가리켜서 속성(property)을 지정 해주는 것*/
+      /*css코드는 속성이 너무 많아서 연습을 많이 해줘야함 속성을 굳이 외울 필요는 없음*/
+      h1 {
+        /*h1 태그에 대한 속성을 지정 해주면 됨.*/
+        color: blue;
+        text-decoration: underline;
+        font-weight: 300;
+        font-size: 50px;
+      }
+      address {
+        text-align: center;
+        color: tomato;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>YHJ FUNNY CSS</h1>
+    </header>
+    <main>
+      <p>CSS FOR BEAUTY HTML TAG</p>
+      <address>어드레스 태그입니다.</address>
+    </main>
+    <footer>&copy; 2021 YHJ</footer>
+  </body>
+</html>

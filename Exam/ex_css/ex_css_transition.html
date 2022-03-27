@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      /* transition은 state가 없는 곳에 작성해야함 a{} = O, a:hover{} = X */
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 50px;
+
+        /* transition: {변화시킬것} {얼마동안 변화할 시간} {ease-in-out}*/
+        /*transition: background-color 10s ease-in-out, color 5s ease-in-out;*/
+        /* transition: all; 변화하는 모든것 */
+        transition: all 5s ease-in-out;
+
+        /*
+        ease-in function : 브라우저에게 변화하는 방법을 알려주는 역할
+        ㄴlinear - 변화 그래프가 직선
+        ㄴease-in - 시작과 끝이 빠름
+        ㄴease-out - 시작과 끝이 느림
+        ㄴease-in-out - 시작이 빠르고 끝이 느림
+        */
+      }
+      a:hover {
+        border-radius: 15px;
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">go home</a>
+  </body>
+</html>

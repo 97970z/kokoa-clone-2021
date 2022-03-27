@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "off",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 150,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

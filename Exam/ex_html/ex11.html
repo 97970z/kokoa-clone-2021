@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      body {
+        height: 100vh; /* vh = viewport height = 화면 높이*/
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      p span {
+        /* p태그 안에 있는 span을 찾아서 설정
+        div p span -> div안에 p안에 span을 찾아서 설정하라는 뜻*/
+        color: white;
+      }
+      p + span {
+        /* div > span : div의 바로 밑 자식인 span한테만 설정 (p태그 안에있는 span은 적용 안됨)*/
+        /* p + span : p태그 다음으로 오는 span에 대한 설정 */
+        /* p ~ span : p태그 바로 밑에 있는 span이 아니고 몇줄 밑에있는 span일 경우 */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>
+        1231231231231231231231231231231232132131233. asdasdasdsadadsadsadsadd.
+        <span>inside</span>
+      </p>
+      <span>Hello</span>
+    </div>
+  </body>
+</html>

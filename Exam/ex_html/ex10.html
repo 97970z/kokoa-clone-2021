@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      body {
+        height: 100vh; /* vh = viewport height = 화면 높이*/
+        margin: 50px;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+        color: white;
+        position: relative;
+      }
+      div:first-child {
+        /* psudo selector 라고 하는 것*/
+        /* first-child : 첫번째 div / last-child 마지막 div*/
+        background-color: tomato;
+      }
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(3n + 1) {
+        /* nth-child() : 괄호 안에 몇번째를 변경할건지 넣으면 그 번호에 해당하는게 설정됨.*/
+        /* nth-child(even) : 짝수번째 설정  / odd : 짝수 / 2n+1 : 2번째마다 */
+        background-color: teal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      * {
+        /* 모든태그에 대한 속성 지정 box든 inline이든 상관없이 적용 */
+        border: 2px dashed pink;
+      }
+      html {
+        /*html은 전체 문서의 속성*/
+        background-color: tomato;
+      }
+      body {
+        background-color: green;
+        margin: 0%;
+        padding: 20px;
+      }
+      div {
+        /* div 전체에 속성을 지정하는 것*/
+        padding: 20px;
+      }
+      #first {
+        /* 태그의 id를 이용해서 css 속성을 지정*/
+        background-color: whitesmoke;
+        height: 150px;
+        width: 150px;
+      }
+      #second {
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+      }
+      #third {
+        background-color: brown;
+        height: 50px;
+        width: 50px;
+      }
+      span {
+        border-style: dotted;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>Hello </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

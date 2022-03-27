@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      body {
+        margin: 20px;
+      }
+      .btn {
+        /* btn이란 class를 새로 만들어서 속성을 지정 해주고
+        태그 class에 btn을 추가 해주면 코드를 반복하지 않고 편하게 가능*/
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .tan {
+        background-color: tan;
+      }
+      .tomato {
+        /* . 을 이용해서 class 에 대한 css 속성을 지정 할 수 있음*/
+        background-color: tomato;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- class를 이용해서 같은 속성이 되도록 지정 가능.-->
+    <span class="btn tomato">Hello</span>
+    <span class="btn tan">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn tan">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn tan">Hello</span>
+  </body>
+</html>

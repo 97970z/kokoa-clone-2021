@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>YHJ FUNNY CSS</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+      }
+      span {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- div 박스 구역 옆에는 아무것도 못 옴. 무조건 밑에 생성됨.-->
+    <!-- div , header, main, footer, section 등등 전부 다 옆에 아무것도 올 수 없음-->
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!--다른 태그들은 옆으로 쭉 생김-->
+    <!--이렇게 옆에 올 수 있는 태그를 inline 태그 라고 부름-->
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <a href="#">link</a>
+    <span>Hello</span>
+    <img src="night.jpg" />
+    <span>Hello</span>
+    <address>Hello</address>
+    <!--address 태그는 inline 태그가 아니라서 옆에 생기지 않고 아래에 생김.-->
+    <span>Hello</span>
+  </body>
+</html>

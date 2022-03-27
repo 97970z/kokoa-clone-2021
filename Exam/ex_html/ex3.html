@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>Home - My First Website</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+  </head>
+  <body>
+    <form>
+      <!--form이라는 것은 구역을 나타냄-->
+      <!--form 말고 section 이라는 것도 있음.-->
+      <div>
+        <!--div 를 사용하면 label과 input이 같은 박스 안에서 묶여짐-->
+        <!--div는 아래쪽으로 붙여짐. 양옆 X-->
+        <label for="website">Website</label>
+        <input id="website" placeholder="url" type="url" />
+      </div>
+      <div>
+        <label for="website">Website</label>
+        <input id="website" placeholder="url" type="url" />
+      </div>
+      <input type="submit" value="Create Account" />
+    </form>
+    <header>
+      <!--header는 div를 대체하는 태그, div랑 같은 기능을 함-->
+      <!--header라는 태그를 보면 header가 웹사이트의 처음 이라는 것을 알 수 있게됨.-->
+      <h1>SOUTH KOREA</h1>
+    </header>
+    <main>
+      <!--main이라는 태그는 딱 봐도 웹사이트의 메인 부분이라는 것을 알 수 있음.-->
+      <p>Hello!</p>
+      <!-- p태그는 block 형식이기때문에 단어를 써도 화면 끝까지 block이 차지함.-->
+      <span>안녕!</span>
+      <!-- span은 p와 다르게 적어둔 단어까지만 생성되는 inline형식임.-->
+    </main>
+    <nav>
+      <!--nav  : 문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 
+        자주 쓰이는 예제는 메뉴, 목차, 색인입니다-->
+      <div>
+        <!--div 를 사용하면 label과 input이 같은 박스 안에서 묶여짐-->
+        <!--div는 아래쪽으로 붙여짐. 양옆 X-->
+        <label for="website">Website</label>
+        <input id="website" placeholder="url" type="url" />
+      </div>
+      <div>
+        <label for="website">Website</label>
+        <input id="website" placeholder="url" type="url" />
+      </div>
+      <input type="submit" value="Create Account" />
+    </nav>
+    <footer>&copy; 2021 YHJ</footer>
+    <!--footer는 누가 봐도 웹사이트의 끝부분 이라는 것-->
+    <!--div 대신에 이렇게 구역을 나눠주는 tag 를 사용 해주는 것이 좋음.-->
+  </body>
+</html>

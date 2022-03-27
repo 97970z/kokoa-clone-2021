@@ -1,0 +1,66 @@
+<!--아래부터는 html 규칙을 지켜서 사이트 생성-->
+<!--구글에 HTML MDN 치면 태그 잘 나와있으니 그거 보고 치면 된다..-->
+<!DOCTYPE html>
+<!--html문서는 무조건 이걸로 시작해야함.-->
+<html lang="kr">
+  <!--lang : 사이트가 주로 사용하는 언어가 뭔지 설정-->
+  <!--html 태그 사이에 넣는 코드가 html코드가 되는 것-->
+  <head>
+    <!--head : 웹사이트의 환경을 설정 함.(외부적으로 안보여지는 부분)-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <!--rel : 아이콘 종류, sizes : 아이콘 크기, href : 이미지 경로-->
+    <title>Home - My First Website</title>
+    <!--title : 브라우저 탭 제목을 설정.-->
+    <meta charset="utf-8" />
+    <!--한글이나 특수문자 입력할 때 깨지는 걸 방지해줌. 필수로 넣기!-->
+    <meta name="description" content="This tis my website" />
+    <!--name="description" : 내 사이트의 설명을 content="" 에 작성-->
+  </head>
+  <body>
+    <!--body : 사용자가 볼 수 있는 환경을 설정-->
+    <h1>Hello!</h1>
+    <a href="https://google.com" target="_blink">Go to google.com</a>
+    <img src="night.jpg" />
+    <p>p태그 : 긴 텍스트를 사용하는 p 태그 입니다~~~~~~~~~~~~~~~~~~~~</p>
+    <pre>pre태그 : 안녕하세요~~ 이건 글씨체가 p태그랑 달라요~~~~~~~~~~~~</pre>
+    <p>
+      abbr태그 : My name is
+      <abbr title="YANG HAN JUN">YHJ의 풀 네임은?</abbr>
+    </p>
+    <p>mark태그 : 제가 사는 나라는 <mark>한국</mark>입니다 ~</p>
+    <p>sup태그 : 2의 5승 표현은 -> 2<sup>5</sup> 이렇게~</p>
+    <p>======== 이 밑에는 form 예제 입니다.==========</p>
+    <form>
+      <!--form이라는 것은 구역을 나타냄-->
+      <label>Profile Photo</label>
+      <input type="file" accept=".pdf, image/*" />
+      <!--accept : 파일 확장자 제한 (.pdf : pdf만 업로드 되게 한 것)-->
+      <!--accept="image/*" 이건 이미지면 어떤 거라도 상관없이 업로드 가능-->
+
+      <label for="first-name">first-name</label>
+      <input id="first-name" required placeholder="Name" type="text" />
+      <!--label의 for 과 input의 id 로 label 클릭 시 input이 선택 되도록 함.-->
+
+      <input required placeholder="Last Name" type="text" />
+      <input required placeholder="Username" type="password" minlength="10" />
+      <!--minlength : 최소 글자 / maxlength : 최대 글자-->
+      <input required placeholder="Password" type="text" />
+      <!--required : input에 값이 채워졌는지 검증-->
+      <!--placeholder : input태그 안에 들어가는 희미한 글씨-->
+      <!--type : input의 타입 지정-->
+      <input type="submit" value="Create Account" />
+      <!--submit : 버튼, value : 버튼 이름 설정-->
+      <!--disabled : 버튼 또는 input박스 비활성화-->
+    </form>
+    <form>
+      <label for="website">Website</label>
+      <input id="website" placeholder="url" type="url" />
+      <input placeholder="email" type="date" />
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
